@@ -41,13 +41,6 @@ function startGame() {
   setNextQuestion();
 }
 
-// function for starting the timer when the start button is pressed
-function start() {
-  // accesses the timer from html and styles it then starts the timer function
-  document.getElementById("count").style = "color:green;";
-  startTimer();
-}
-
 // creates function for starting the timer
 function startTimer() {
   // states the variable and val of the counter
@@ -69,6 +62,13 @@ function startTimer() {
     }
     // interval rate
   }, 1000);
+}
+
+// function for starting the timer when the start button is pressed
+function start() {
+  // accesses the timer from html and styles it then starts the timer function
+  document.getElementById("count").style = "color:green;";
+  startTimer();
 }
 
 // function for calling the next question object
@@ -134,11 +134,11 @@ function selectAnswer(e) {
     startButton.innerText = "restart";
     startButton.classList.remove("hide");
   }
+  // adss a value of one for every right answer
   if ((selectedButton.dataset = correct)) {
     countRightAnswers++;
-    // +1, change it if you need +10, +25 etc
   }
-  button.addEventListener("click", showQuestion);
+  // Button.addEventListener("click", showQuestion);
   document.getElementById("right-answers").innerHTML = countRightAnswers; // span will show the score
 }
 
