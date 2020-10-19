@@ -8,14 +8,20 @@
     <title>Math Quiz</title>
   </head>
   <body>
+    <!-- container background -->
     <div class="container">
+      <!-- hidden by default, class for java to reach -->
       <div id="question-container" class="hide">
+        <!-- id for selecting in javascript -->
         <h1 id="question">Question</h1>
+        <!-- timer -->
         <h2 id="count">53</h2>
         seconds
         <br />
+        <!-- output for score -->
         <p id="right-answers">0</p>
         point(s)
+        <!-- buttons for answering -->
         <div id="answer-buttons" class="btn-grid">
           <button class="btn">Answer1</button>
           <button class="btn">Answer2</button>
@@ -23,7 +29,7 @@
           <button class="btn">Answer4</button>
         </div>
       </div>
-
+      <!-- control buttons -->
       <div class="controls">
         <button id="start-btn" class="start-btn btn" onclick="start()">
           start

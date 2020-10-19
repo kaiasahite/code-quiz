@@ -1,6 +1,7 @@
-*,
+/* all elements*, */
 *::before,
 *::after {
+  /* makes widths and height easier to style */
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
